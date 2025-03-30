@@ -9,6 +9,14 @@ import questionsBank from "@/data/quizQuestions";
 import Question from "@/components/Question";
 import ReactConfetti from 'react-confetti';
 
+
+
+ export  type Question = {
+  question: string;
+  options: string[];
+  correctAnswer: string;
+  timeLimit: number;
+};
 const Quiz = () => {
 
     const [quizStarted, setQuizStarted] = useState(false);
@@ -19,12 +27,6 @@ const Quiz = () => {
     const { width, height } = useWindowSize();
  const [questions, setQuestions] = useState(questionsBank);
 
-    type Question = {
-  question: string;
-  options: string[];
-  correctAnswer: string;
-  timeLimit: number;
-};
 
    const shuffleQuestions = (questionsArray: Question[]) => {
         for (let i = questionsArray.length - 1; i > 0; i--) {
