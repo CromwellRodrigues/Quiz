@@ -78,7 +78,7 @@ const Question = (
             {question.options.map((option, index) => (
                 <Button 
                     key={index}
-                    className={`w-full text-left justify-start px-6 py-8  rounded-lg font-semibold text-3xl  ${
+                    className={`w-full text-left justify-start px-6 py-8  rounded-lg font-semibold text-3xl sm:text-2xl ${
               selectedAnswer !== null
                 ? option === question.correctAnswer
                   ? 'bg-green-800 text-white'

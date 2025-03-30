@@ -125,10 +125,10 @@ const Quiz = () => {
 
     
   return (
-      <div className="w-full h-screen max-w-md  mt-0 flex flex-col justify-around text-center  sm:p-6 bg-emerald-100 rounded-lg ">
+      <div className="w-[90%] h-screen max-w-md  mt-0 flex flex-col justify-around text-center  sm:p-6 bg-emerald-100 rounded-lg ">
           
       
-          <h1 className = "text-3xl font-bold mb-0">
+          <h1 className = "text-3xl font-bold mb-0 ">
             🚀 Quiz App 🧠
           </h1>
 
