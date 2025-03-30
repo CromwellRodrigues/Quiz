@@ -1,4 +1,4 @@
-import { GiAustralia } from "react-icons/gi";
+
 
 const questionsBank = [
 
