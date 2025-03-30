@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 Welcome to **Capitals Quiz**, a fun and interactive quiz app to test your knowledge of world capitals! 🌟
 
-![Quiz Screenshot](https://via.placeholder.com/800x400.png?text=Screenshot+Placeholder) <!-- Replace with an actual screenshot URL -->
+
 
 ---
 
