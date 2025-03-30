@@ -19,8 +19,14 @@ const Quiz = () => {
     const { width, height } = useWindowSize();
  const [questions, setQuestions] = useState(questionsBank);
 
+    type Question = {
+  question: string;
+  options: string[];
+  correctAnswer: string;
+  timeLimit: number;
+};
 
-   const shuffleQuestions = (questionsArray) => {
+   const shuffleQuestions = (questionsArray: Question[]) => {
         for (let i = questionsArray.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [questionsArray[i], questionsArray[j]] = [questionsArray[j], questionsArray[i]];

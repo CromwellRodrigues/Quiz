@@ -1,6 +1,6 @@
 
 
-const questionsBank = [
+const questionsBank : Question[] = [
 
   { question: "Capital of Afghanistan", options: shuffle(["Kabul", "Kandahar", "Herat", "Mazar-i-Sharif"]), correctAnswer: "Kabul", timeLimit: 15 },
   { question: "Capital of Albania", options: shuffle(["Tirana", "Durres", "Vlore", "Shkoder"]), correctAnswer: "Tirana", timeLimit: 15 },
