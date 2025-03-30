@@ -1,5 +1,35 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Capitals Quiz 🧠
 
+Welcome to **Capitals Quiz**, a fun and interactive quiz app to test your knowledge of world capitals! 🌟
+
+![image](https://github.com/user-attachments/assets/ca89185c-a69b-4d97-b9ba-074bed4d6a48)
+
+
+---
+
+## 🚀 Features
+- 🗺️ **World Capitals**: Test your knowledge of capitals from around the globe.
+- 🔄 **Shuffled Questions**: Questions and options are shuffled for a unique experience every time.
+- ⏱️ **Time Limit**: Answer each question within a set time limit.
+- 📊 **Score Tracking**: Keep track of your score as you progress through the quiz.
+- 🎉 **Confetti Celebration**: Celebrate your perfect score with confetti!
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend**: [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Framework**: [Next.js](https://nextjs.org/)
+
+---
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/capitals-quiz.git
+   cd capitals-quiz
 ## Getting Started
 
 First, run the development server:
