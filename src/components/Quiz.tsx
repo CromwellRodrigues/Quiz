@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState} from 'react'
+import React, {useState, useEffect } from 'react'
 import { useWindowSize } from 'react-use';
 
 import { Button } from "@/components/ui/button"
@@ -24,9 +24,10 @@ const Quiz = () => {
       const [score, setScore] = useState(0);
       const [quizCompleted, setQuizCompleted] = useState(false);
       const [answeredQuestions, setAnsweredQuestions] = useState(0);
-    const { width, height } = useWindowSize();
- const [questions, setQuestions] = useState(questionsBank);
+  
+ const [questions, setQuestions] = useState<Question[]>([]);
 
+    const { width = 0, height =0 } = useWindowSize();
 
    const shuffleQuestions = (questionsArray: Question[]) => {
         for (let i = questionsArray.length - 1; i > 0; i--) {
@@ -125,7 +126,9 @@ const Quiz = () => {
 
     
   return (
-      <div className="w-[90%] h-screen max-w-md  mt-0 flex flex-col justify-around text-center  sm:p-6 bg-emerald-100 rounded-lg ">
+      <div className="flex min-h-screen min-w-[500px] flex-col items-center justify-center p-24">
+          
+        {/* "w-[100%] max-w-[600px] min-w-[500px] sm:w-[100%] h-screen  mx-auto flex flex-col justify-around text-center  sm:p-6 bg-emerald-100 rounded-lg " */}
           
       
           <h1 className = "text-3xl font-bold mb-0 ">
@@ -139,13 +142,17 @@ const Quiz = () => {
             />
 
 
-         <div className="p-10 text-3xl text-center flex  flex-col bg-amber-50 shadow-md rounded-lg  sm:p-2"> 
-          <p className= "mt-0 py-0 text-3xl text-amber-500 font-medium sm:text-base">
+          <div className=
+              "flex  flex-col items-center justify-center p-2">
+              {/* "mt-0 p-10 text-3xl text-center flex  flex-col bg-amber-50 shadow-md rounded-lg  ">  */}
+              <p className="flex flex-col items-center justify-center p-2">
+                  
+                {/*    "mt-0 py-0 text-3xl text-amber-500 font-medium sm:text-base"> */}
               Question : {currentQuestionIndex + 1} of {questions.length}
           </p>
           
             {/* Display the current score */}
-              <p className="text-3xl text-amber-600 font-medium mt-0 mb-0 py-0 sm:text-base">
+              <p className="text-2xl text-amber-600 font-medium mt-0 mb-0 py-0 sm:text-base">
                 Score: {score} / {questions.length}
             </p>
 

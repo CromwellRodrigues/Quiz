@@ -67,7 +67,7 @@ const Question = (
  
     return (
   
-    <div className= "bg-amber-50 shadow-md rounded-lg p-6">
+    <div className= "bg-amber-50 shadow-md rounded-lg p-6 sm:p-6 w-[90%] max-w-lg mx-auto sm:w-full mt-0 flex flex-col justify-around text-center ">
 
         <h2 className="text-4xl font-semibold mb-2  text-blue-700">
             {question.question}
@@ -78,14 +78,14 @@ const Question = (
             {question.options.map((option, index) => (
                 <Button 
                     key={index}
-                    className={`w-full text-left justify-start px-6 py-8  rounded-lg font-semibold text-3xl sm:text-2xl ${
+                    className={`w-full text-left justify-start px-6 py-8  rounded-lg font-semibold text-3xl sm:text-2xl sm:w-full ${
               selectedAnswer !== null
                 ? option === question.correctAnswer
                   ? 'bg-green-800 text-white'
                   : selectedAnswer === option
                   ? 'bg-red-500 text-white'
                   : 'bg-gray-200 text-black'
-                : 'bg-blue-500 text-white  hover:bg-blue-600'
+                : 'bg-blue-500 text-white  hover:bg-blue-600 sm:w-full hover:scale-110 transition'
             }`}
                     onClick={() => handleOptionClick(option)}   
                     
