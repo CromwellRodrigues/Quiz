@@ -129,3 +129,8 @@ body, html {
   padding: 0;
   height: 100%;
 }
+
+#_next, main {
+  height: 100%;
+  overflow: hidden;
+}
