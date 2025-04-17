@@ -45,7 +45,7 @@ const Quiz = () => {
         setQuizCompleted(false);
 
         const shuffledQuestions  = shuffleQuestions([...questionsBank]);
-        setQuestions(shuffledQuestions.slice(0, 100));  
+        setQuestions(shuffledQuestions.slice(0, 10));  // Adjust the number of questions as needed
     }
 
     
